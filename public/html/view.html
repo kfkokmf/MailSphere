@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emails</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/filter.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="profile">
+        <img src="../img/User.png" alt="Profile Image" class="profile-image" />
+        <span class="profile-name">User</span>
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav-link" id="view-button">
+          <img src="../img/email-icon.png" alt="Icon" class="nav-icon" />
+          <span>View</span>
+        </a>
+        <a href="#" class="nav-link" id="add-button">
+          <img src="../img/plus.png" alt="Icon" class="nav-icon" />
+          <span>Add</span>
+        </a>
+        <a href="#" class="nav-link" id="delete-button">
+          <img src="../img/delete.png" alt="Icon" class="nav-icon" />
+          <span>Delete</span>
+        </a>
+        <a href="#" class="nav-link" id="change-button">
+          <img src="../img/change.png" alt="Icon" class="nav-icon" />
+          <span>Change</span>
+        </a>
+      </nav>
+      <div class="sidebar-bottom">
+        <img
+          src="../img/settings-icon.png"
+          alt="Bottom Image"
+          class="bottom-image"
+        />
+      </div>
+    </div>
+    <div class="main-content" id="dynamic-content">
+      <div class="content-left" id="content-left">
+        <div class="loading">Loading...</div>
+
+        <h1 class="header-with-button">
+          View Items <button id="toggle-filters">+</button>
+        </h1>
+        <div id="email-list" class="email-list"></div>
+      </div>
+      <div class="content-right" id="content-right" style="display: none">
+        <div class="filters-h1">
+          <h1>Filters</h1>
+          <button id="toggle-filters">+</button>
+        </div>
+        <div id="filter-brand">
+          <h2>Brand</h2>
+          <button id="toggle-brand-list">Show Brands</button>
+          <div id="brand-list" style="display: none"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../scripts/view.js"></script>
+    <script src="../scripts/filters.js"></script>
+  </body>
+</html>
